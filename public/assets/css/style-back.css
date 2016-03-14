@@ -1,0 +1,31 @@
+body {
+	padding-top: 25px;
+	padding-bottom: 25px;
+}
+
+#sidebar .panel-heading {
+	cursor: pointer;
+}
+
+#sidebar .list-group {
+	/*display: none;*/
+}
+
+#sidebar .list-group .list-group-item.active a {
+	color: #fff;
+}
+
+#image-index {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-align: justify;
+}
+
+#image-index li {
+	display: inline-block;
+}
+
+.ui-datepicker select.ui-datepicker-month, .ui-datepicker select.ui-datepicker-year {
+    background-color: #F7AF39;
+}
