@@ -134,7 +134,7 @@ class OrderMainController extends BaseController {
 				if ($order_main->status == 3) {
 					Mail::send('back.order_main.mail_deliver', ['data' => $order_main], function($message) use ($order_main) {
 						//$message->from('salesonline@internalgroup.id');
-						$message->from('admin@internalgroup.id');
+						//$message->from('admin@internalgroup.id');
 						$message->to($order_main->buyer->email);
 
 						if ($order_main->buyer_custom != null) {
@@ -307,10 +307,11 @@ class OrderMainController extends BaseController {
 			];
 
 			Mail::send('back.order_main.mail', $mail, function($message) {
-				$message->from('salesonline@internalgroup.id', 'Sales Department Store');
+				//$message->from('salesonline@internalgroup.id', 'Sales Department Store');
 				//$message->from('nuril@idekreatif.id');
 				//$message->to('firegliese@gmail.com');
-				$message->to('onlinefinance@internalgroup.id');
+				//$message->to('onlinefinance@internalgroup.id');
+				$message->to('sprei_lady@idekreatif.id');
 				$message->subject('Order Confirmed');
 			});
 		}

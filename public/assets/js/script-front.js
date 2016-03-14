@@ -1,7 +1,7 @@
 //<![CDATA[
 var main = function() {
-	//uri = 'http://localhost/lrvl_internal_commerce/public/';
-	uri = 'http://store.internalgroup.id/';
+	uri = 'http://localhost/lrvl_internal_commerce/public/';
+	//uri = 'http://store.internalgroup.id/';
 
 	// Spend Point
 	pb = $('input[name="price_back"]');

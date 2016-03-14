@@ -29,7 +29,8 @@ return array(
 	*/
 
 	//'host' => 'smtp.mailgun.org',
-	'host' => 'mail.internalgroup.id',
+	//'host' => 'mail.internalgroup.id',
+	'host' => 'server43052x.maintenis.com'
 
 	/*
 	|--------------------------------------------------------------------------
@@ -43,8 +44,8 @@ return array(
 	*/
 
 	//'port' => 587,
-	//'port' => 465,
-	'port' => 25,
+	'port' => 465,
+	//'port' => 25,
 
 	/*
 	|--------------------------------------------------------------------------
@@ -57,7 +58,8 @@ return array(
 	|
 	*/
 
-	'from' => array('address' => null, 'name' => null),
+	//'from' => array('address' => null, 'name' => null),
+	'from' => array('address' => 'sprei_lady@idekreatif.id', 'name' => 'Sprei Lady'),
 
 	/*
 	|--------------------------------------------------------------------------
@@ -71,7 +73,7 @@ return array(
 	*/
 
 	//'encryption' => 'tls',
-	//'encryption' => 'ssl',
+	'encryption' => 'ssl',
 
 	/*
 	|--------------------------------------------------------------------------
@@ -84,7 +86,7 @@ return array(
 	|
 	*/
 
-	'username' => 'admin@internalgroup.id',
+	'username' => 'sprei_lady@internalgroup.id',
 
 	/*
 	|--------------------------------------------------------------------------

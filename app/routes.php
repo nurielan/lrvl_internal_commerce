@@ -114,10 +114,10 @@ Route::get('try', function() {
 		echo 'You have some limit chance.';
 	}
 	echo $carbon->timestamp(strtotime(OrderMain::find(1)->created_at))->timezone('Asia/Jakarta')->addDays(3);
-	echo '</pre>';*/
+	echo '</pre>';
 
 	echo Hash::make('segitiga');
-	print_r(OrderConfirm::with(['order_main', 'order_main.buyer'])->where('id', '=', 2)->first()->order_main->buyer->name);
+	print_r(OrderConfirm::with(['order_main', 'order_main.buyer'])->where('id', '=', 2)->first()->order_main->buyer->name);*/
 });
 
 # Back

@@ -12,7 +12,8 @@
 		"hok00age/rajaongkir": "^1.0",
 		"ollieread/multiauth": "^3.3",
 		"fzaninotto/faker": "^1.5",
-		"barryvdh/laravel-dompdf": "0.4.*"
+		"barryvdh/laravel-dompdf": "0.4.*",
+		"hybridauth/hybridauth": "^2.6"
 	},
 
 	"repositories": [

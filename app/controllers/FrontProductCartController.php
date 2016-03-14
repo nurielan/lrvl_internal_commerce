@@ -287,7 +287,7 @@ class FrontProductCartController extends BaseController {
 			];
 
 		Mail::send('front.product.cart.mail', $mail, function($message) {
-			$message->from('admin@internalgroup.id', 'Internal Group');
+			//$message->from('admin@internalgroup.id', 'Internal Group');
 			//$message->from(Profile::find(1)->email, 'Internal Group');
 			//$message->from('nuril@idekreatif.id', 'Internal Group');
 			if (Session::has('buyer.account')) {
@@ -295,8 +295,11 @@ class FrontProductCartController extends BaseController {
 			} else {
 				$message->to(Auth::buyer()->user()->email);
 			}
-			$message->to('salesonline@internalgroup.id');
-			$message->to('admin@internalgroup.id');
+			//$message->to('salesonline@internalgroup.id');
+			//$message->to('admin@internalgroup.id');
+			$message->to('sprei_lady@idekreatif.id');
+			$message->to('enurhayati462@gmail.com');
+			$message->to('christabraham@gmail.com');
 			$message->subject('Buying Confirmation');
 		});
 

@@ -1,6 +1,6 @@
 $(document).ready(function() {
-	//uri = 'http://localhost/lrvl_internal_commerce/public/back/';
-	uri = 'http://store.internalgroup.id/back/';
+	uri = 'http://localhost/lrvl_internal_commerce/public/back/';
+	//uri = 'http://store.internalgroup.id/back/';
 
 	// Get mail
     get_mail = setInterval(function() {

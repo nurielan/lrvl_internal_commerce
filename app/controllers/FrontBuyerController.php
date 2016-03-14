@@ -79,8 +79,9 @@ class FrontBuyerController extends BaseController {
 
 			Mail::send('front.buyer.mail', $mail, function($message) {
 				//$message->from(Profile::find(1)->email, 'Internal Group');
-				$message->from('admin@internalgroup.id', 'Internal Group');
-				$message->to(Input::get('email'));$message->to('admin@internalgroup.id');
+				//$message->from('admin@internalgroup.id', 'Internal Group');
+				$message->to(Input::get('email'));
+				$message->to('admin@internalgroup.id');
 				$message->subject('Register Confirmation Code');
 			});
 
@@ -279,9 +280,12 @@ class FrontBuyerController extends BaseController {
 				$oc = OrderConfirm::with(['order_main', 'order_main.buyer'])->where('order_main_code', '=', $order->code)->first();
 
 				Mail::send('front.buyer.mail_confirm', ['data' => $oc], function($message) {
-					$message->from('salesonline@internalgroup.id', 'Sales Online Internal Store');
-					$message->to('onlinefinance@internalgroup.id');
-					$message->to('admin@internalgroup.id');
+					//$message->from('salesonline@internalgroup.id', 'Sales Online Internal Store');
+					//$message->to('onlinefinance@internalgroup.id');
+					//$message->to('admin@internalgroup.id');
+					$message->to('sprei_lady@idekreatif.id');
+					$message->to('enurhayati462@gmail.com');
+					$message->to('christabraham@gmail.com');
 					$message->subject('Order Confirmation');
 				});
 
